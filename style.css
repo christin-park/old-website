@@ -1,0 +1,238 @@
+body {
+    font-family: 'Assistant', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll; /*this line is op*/
+}
+
+/*HEADER*/
+.navigation-nav {
+    margin-top: 30px;
+    width: 50%;
+    height: 70px;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.navigation-list {
+    padding: 0 40px;
+    padding-bottom: 25px;
+}
+
+.navigation-list li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 40px;
+}
+
+/*bruh why does this mess up everyuthig (fix later)
+.navigation-nav li:hover{
+    font-weight: bold;
+}
+*/
+
+.navigation-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.web-img-div {
+    text-align: center;
+}
+.website-image {
+    display: block;
+    margin: auto;
+    width: 3%;
+    padding-bottom: 8px;
+}
+
+.eye {
+    height: 33px;
+    transform: translateY(10px);
+}
+
+.horizontal-line {
+    width: 50%;
+}
+
+.to-top {
+    transition: all .9s;
+}
+
+.to-top-image {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*INDEX*/
+.intro-box {
+    background-color: red;
+    width: 45%;
+    margin: auto;
+}
+
+.intro-portrait {
+    width: 40%;
+
+}
+
+/*EXPERIENCE*/
+.one-work {
+    margin: auto;
+    width: 45%;
+    text-align: left;
+    font-size: 14px;
+    padding: 25px 0;
+}
+
+.one-work h1{
+    padding-left: 37px;
+    font-size: 20px;
+    margin: 0;
+}
+
+/*PROJECTS*/
+.project-desc {
+    margin-left: 45px;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    
+}
+
+.project-desc h2 {
+    padding-left: 37px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.project-desc ul {
+    margin: 0;
+}
+.one-project {
+    display: flex;
+    width: 45%;
+    margin: auto;
+    align-items: top;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.process-video-link {
+    text-decoration: none;
+    color: black;
+}
+
+.slideshow {
+    padding-bottom: 50px;
+    width: 32%;
+    height: 32%;   
+    text-align: center; 
+}
+
+.slideshow-elements {
+    position: relative;
+}
+
+.slideshow-images {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+}
+
+.slideshow-images img {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    object-fit: cover;
+}
+
+.slideshow-nav {
+    position: absolute;
+    display: flex;
+    column-gap: 20px;
+    bottom: -30px;
+    left: 50%;  
+    transform: translateX(-50%);
+}
+
+.slideshow-nav a {
+    width: 25px;
+    height: 8px;
+
+    background-color: black;
+    opacity: 0.6;
+    transition: opacity ease 500ms;
+}
+
+.slideshow-nav a:hover {
+    opacity: 1;
+}    
+
+.last-text {
+    margin: auto;
+    width: 42%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.process-video-link {
+    text-decoration: none;
+    color: black;
+}
+
+/*EYE*/
+.eye-image {
+    padding-top: 120px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*CONTACTS*/
+.contact-container {
+    display:flex;
+    align-items: center;
+    width: 45%;
+    margin:auto;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.contact-container a, p {
+    margin-left: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-container p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact-container img {
+    width: 25px;
+}
+
+
+
+/*Welcome to white space. You have been living here for as long as you can remember.
+If you get this reference we can be besties :D*/
+.white-space {
+    height: 25px;
+}
