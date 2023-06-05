@@ -10,16 +10,18 @@ body {
     width: 50%;
     height: 70px;
     margin: auto;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 17px;
     padding: 0 40px;
     text-align: center;
+
 }
 
 .navigation-list {
-    padding: 0 40px;
+    padding: 0;
+    margin: 0;
     padding-bottom: 25px;
 }
 
@@ -28,12 +30,6 @@ body {
     display: inline-block;
     margin: 0 40px;
 }
-
-/*bruh why does this mess up everyuthig (fix later)
-.navigation-nav li:hover{
-    font-weight: bold;
-}
-*/
 
 .navigation-list a {
     text-decoration: none;
@@ -46,7 +42,7 @@ body {
 .website-image {
     display: block;
     margin: auto;
-    width: 3%;
+    width: 55px;
     padding-bottom: 8px;
 }
 
@@ -76,16 +72,82 @@ html{
     scroll-behavior: smooth;
 }
 
+.hamburger {
+    display: none;
+}
+
+.hamburger img {
+    margin: 20px 0;
+    width: 25px;
+}
+
+@media (max-width: 1350px) {
+    .navigation-nav {
+        display: none;
+
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation-nav.active {
+        display: block;
+    }
+
+    .hamburger.active {
+        padding-bottom: 60px;
+    }
+
+    .navigation-nav.active .navigation-list li {
+        display: block;
+        margin: 7px;
+      }
+    
+    .navigation-list li {
+        display: block;
+        transform: translateY(-70px);
+    }
+}
+
+
 /*INDEX*/
 .intro-box {
-    background-color: red;
     width: 45%;
     margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 25px;
 }
 
 .intro-portrait {
     width: 40%;
+}
 
+.intro-text {
+    padding: 0 40px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media (max-width: 1350px) {
+    .intro-box {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .intro-portrait {
+        width: 80%;
+      }
+  
+      .intro-text {
+          width: 80%;
+      }
 }
 
 /*EXPERIENCE*/
@@ -128,7 +190,7 @@ html{
     align-items: top;
     justify-content: center;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .process-video-link {
@@ -139,7 +201,6 @@ html{
 .slideshow {
     padding-bottom: 50px;
     width: 32%;
-    height: 32%;   
     text-align: center; 
 }
 
@@ -163,19 +224,20 @@ html{
 .slideshow-nav {
     position: absolute;
     display: flex;
-    column-gap: 20px;
-    bottom: -30px;
+    column-gap: 10px;
+    bottom: -50px;
     left: 50%;  
     transform: translateX(-50%);
+    align-items: center;
+}
+
+.slideshow-nav img {
+    width: 60px;
 }
 
 .slideshow-nav a {
-    width: 25px;
-    height: 8px;
-
-    background-color: black;
     opacity: 0.6;
-    transition: opacity ease 500ms;
+    transition: opacity ease 200ms;
 }
 
 .slideshow-nav a:hover {
@@ -194,9 +256,25 @@ html{
     color: black;
 }
 
+@media (max-width: 1350px) {
+    .one-project {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .slideshow {
+        width: 100%;
+      }
+  
+      .project-desc {
+          width: 100%;
+      }
+}
+
 /*EYE*/
 .eye-image {
-    padding-top: 120px;
+    padding-top: 125px;
+    padding-bottom: 20px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -204,8 +282,9 @@ html{
 }
 
 /*CONTACTS*/
-.contact-container {
-    display:flex;
+.contact-box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 45%;
     margin:auto;
@@ -213,23 +292,49 @@ html{
     margin-bottom: 10px;
 }
 
-.contact-container a, p {
-    margin-left: 8px;
+.contact-1-text {
+    margin: 0px;
+    padding-top: 25px;
+    padding-bottom: 10px;
     font-size: 20px;
+}
+
+.contact-1-button {
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 8px;
+}
+
+.contact-1-button img {
+    width: 40px;
+}
+
+.contact-1-img {
+    position: relative;
+    text-align: center;
+}
+
+.contact-text {
+    padding: 4px 8px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 200ms;
+    pointer-events: none;
+    font-family: 'Assistant';
     text-decoration: none;
+    transform: translateY(-5px);
     color: black;
 }
 
-.contact-container p {
-    margin-top: 0;
-    margin-bottom: 0;
+.contact-1-button:hover .contact-text {
+    opacity: 1;
 }
 
-.contact-container img {
-    width: 25px;
+.contact-1-img a {
+    text-decoration: none;
 }
-
-
 
 /*Welcome to white space. You have been living here for as long as you can remember.
 If you get this reference we can be besties :D*/
