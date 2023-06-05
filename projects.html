@@ -10,13 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="x-icon" href="website_favicon.png">
-</head>
+    <script src="extra.js" defer></script>
+</head>    
 <body>
     <!--nav-->
     <div class="navigation-div">
         <div class="web-img-div">
             <a href="index.html"><img class="website-image" src="website_icon.png"></a>
         </div>
+        <a href="#" class="hamburger">
+            <img src="hamburger-icon.png">
+        </a>
         <nav class="navigation-nav">
             <ul class="navigation-list">
                 <li><a href="index.html">Home</a></li>
@@ -35,13 +39,13 @@
             <div class="slideshow-elements">
                 <div class="slideshow-images">
                     <img id="slide-10" src="website_10.png">
-                    <img id="slide-11" src="19201080.png">
-                    <img id="slide-12" src="19201080.png">
+                    <img id="slide-11" src="website_placeholder.png">
+                    <img id="slide-12" src="website_placeholder.png">
                 </div>  
                 <div class="slideshow-nav">
-                    <a href="#slide-10"></a>
-                    <a href="#slide-11"></a>
-                    <a href="#slide-12"></a>
+                    <a href="#slide-10" onclick="scrollToElement('slide-10'); return false;"><img src="website_10.png"></a>
+                    <a href="#slide-11" onclick="scrollToElement('slide-11'); return false;"><img src="website_placeholder.png"></a>
+                    <a href="#slide-12" onclick="scrollToElement('slide-12'); return false;"><img src="website_placeholder.png"></a>
                 </div>
             </div>
         </div>
@@ -67,12 +71,12 @@
                 <div class="slideshow-images">
                     <img id="slide-7" src="website_7.png">
                     <img id="slide-8" src="website_8.png">
-                    <img id="slide-9" src="19201080.png">
+                    <img id="slide-9" src="website_placeholder.png">
                 </div>  
                 <div class="slideshow-nav">
-                    <a href="#slide-7"></a>
-                    <a href="#slide-8"></a>
-                    <a href="#slide-9"></a>
+                    <a href="#slide-7" onclick="scrollToElement('slide-7'); return false;"><img src="website_7.png"></a>
+                    <a href="#slide-8" onclick="scrollToElement('slide-8'); return false;"><img src="website_8.png"></a>
+                    <a href="#slide-9" onclick="scrollToElement('slide-9'); return false;"><img src="website_placeholder.png"></a>
                 </div>
             </div>
         </div>
@@ -96,12 +100,12 @@
         <div class="slideshow">
             <div class="slideshow-elements">
                 <div class="slideshow-images">
-                    <img id="slide-5" src="19201080.png">
-                    <img id="slide-6" src="19201080.png">
+                    <img id="slide-5" src="website_placeholder.png">
+                    <img id="slide-6" src="website_placeholder.png">
                 </div>  
                 <div class="slideshow-nav">
-                    <a href="#slide-5"></a>
-                    <a href="#slide-6"></a>
+                    <a href="#slide-5" onclick="scrollToElement('slide-5'); return false;"><img src="website_placeholder.png"></a>
+                    <a href="#slide-6" onclick="scrollToElement('slide-6'); return false;"><img src="website_placeholder.png"></a>
                 </div>
             </div>
         </div>
@@ -112,7 +116,7 @@
             <ul>
                 <li>May 2023</li>
                 <li>Frontend web development of a projects website displaying an introduction, projects, and contact using HTML and CSS</li>
-                <li>Skills: UI/UX web design, HTML/CSS using VSCode, art assets using Clip Studio Paint, video editing using DaVinci Resolve</li>
+                <li>Skills: UI web design, HTML/CSS using VSCode, art assets using Clip Studio Paint, video editing using DaVinci Resolve</li>
                 <li>Process video ⚇: work in progress
             </ul>
             </p>
@@ -130,10 +134,11 @@
                     <img id="slide-4" src="website_4.png">
                 </div>  
                 <div class="slideshow-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                    <a href="#slide-4"></a>
+                    <a href="#slide-1" onclick="scrollToElement('slide-1'); return false;"><img src="website_1.png"></a>
+                    <a href="#slide-2" onclick="scrollToElement('slide-2'); return false;"><img src="website_2.png"></a>
+                    <a href="#slide-3" onclick="scrollToElement('slide-3'); return false;"><img src="website_3.png"></a>
+                    <a href="#slide-4" onclick="scrollToElement('slide-4'); return false;"><img src="website_4.png"></a>
+                 
                 </div>
             </div>
         </div>
@@ -156,8 +161,8 @@
     <p class="last-text">
         “I heard this story about a fish, he swims up to an older fish and says: ‘I’m trying to find this thing they call the ocean.’
         ‘The ocean?’ the older fish says, ‘That’s what you’re in right now.’ ‘This’, says the young fish, ‘this is water. What I want is the ocean!’”
-        -Fish story retelling from Soul (
-        <a class="process-video-link" href="https://www.youtube.com/watch?v=Pg7Zit2Thks" target="_blank">https://www.youtube.com/watch?v=Pg7Zit2Thks</a></li> )<br><br>
+        -Fish story retelling from Soul
+        (<a class="process-video-link" href="https://www.youtube.com/watch?v=Pg7Zit2Thks" target="_blank">https://www.youtube.com/watch?v=Pg7Zit2Thks</a></li>)<br><br>
         Life is not about just reaching a goal, and reaching it does not ensure fulfillment.
         When you keep obsessing over one thing, you can’t appreciate what just is. It is
         also important to enjoy other things in between. :) <br>
