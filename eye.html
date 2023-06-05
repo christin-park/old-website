@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christin Park  |  Home</title>
+    <title>Christin Park  |  </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="x-icon" href="website_icon_2.png">
+    <script src="extra.js" defer></script>
 </head>
 <body>
     <!--nav-->
@@ -17,6 +18,9 @@
         <div class="web-img-div">
             <a href="index.html"><img class="website-image" src="website_icon.png"></a>
         </div>
+        <a href="#" class="hamburger">
+            <img src="hamburger-icon.png">
+        </a>
         <nav class="navigation-nav">
             <ul class="navigation-list">
                 <li><a href="index.html">Home</a></li>
@@ -28,7 +32,42 @@
     </div>
     <hr class="horizontal-line">
     <!--content-->
-    <img class="eye-image" src="website_illust.png">    
+    <img class="eye-image" src="website_illust.png">   
+    
+    <div class="one-project">
+        <!--image slideshow-->  
+        <div class="slideshow">
+            <div class="slideshow-elements">
+                <div class="slideshow-images">
+                    <img id="slide--7" src="website_7.png">
+                    <img id="slide--8" src="website_8.png">
+                    <img id="slide--9" src="website_placeholder.png">
+                </div>  
+                <div class="slideshow-nav">
+                    <a href="#slide-7" onclick="scrollToElement('slide--7'); return false;"><img src="website_7.png"></a>
+                    <a href="#slide--8" onclick="scrollToElement('slide--8'); return false;"><img src="website_8.png"></a>
+                    <a href="#slide--9" onclick="scrollToElement('slide--9'); return false;"><img src="website_placeholder.png"></a>
+                </div>
+            </div>
+        </div>
+        <!--project description-->
+        <div class="project-desc">
+            <h2>Developing game "Nature's Message"</h2>
+            <p>
+            <ul>
+                <li>May-June 2023</li>
+                        <li>Developed an original game where the player writes a letter</li>
+                        <li>Skills: Development using Unity, art assets using Clip Studio Paint, video editing using DaVinci Resolve</li>
+                        <li>Process video ⚇: work in progress</li>
+                        <li>Download game ⚇: work in progress</li>
+            </ul>
+            </p>
+        </div>
+    </div>   
+
+    
+
+    <div class="white-space"></div>
     <!--text-->
     <p class="last-text">
         "Games do everything that art is supposed to do and beyond. It mixes visuals, writing, music and sound,
